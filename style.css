@@ -1,0 +1,76 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(180deg, #FC547E 70%, white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.painel {
+    background: white;
+    width: 80%;
+    max-width: 400px;
+    max-height: 90%;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;  
+    box-shadow: 0px 4px 10px rgba(red, green, blue, alpha);
+    position: relative;
+}
+
+.painel h1{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.painel img{
+    max-width: 100%;
+    height: auto;   
+    border-radius: 10px;
+}
+
+.painel h2{
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.painel .buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#sim, 
+#nao{
+    height: 40px;
+    width: 100px;
+    background: #FC547E;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#sim{
+    transition: transform 0.2s ease;
+}
+
+#sim:hover{
+    transform: scale(1.1);
+}
+
+#nao{
+    position: absolute;
+    transition: top 0.4s ease, left 0.4s ease;
+    top: inherit;
+    right: 20px;
+
+}
